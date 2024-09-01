@@ -289,8 +289,10 @@ def run_scraper(text):
         collection.add({
             'title': title,
             'url': url,
+            'image_urls': urls,
             'options': options,
             'sources': sources,
+            'question': text,
             'answer':answer,
             'timestamp': datetime.now().isoformat()
         })
